@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: flama-basic;
+  src: url(./assets/fonts/Flama/webfonts/Flama-Basic2_2.woff);
+}
+
+@font-face {
+  font-family: flama-bold;
+  src: url(./assets/fonts/Flama/webfonts/Flama-Bold2.woff);
+}
+
+@font-face {
+  font-family: flama-book;
+  src: url(./assets/fonts/Flama/webfonts/Flama-Book2.woff);
+}
+
+@font-face {
+  font-family: flama-bookitalic;
+  src: url(./assets/fonts/Flama/webfonts/Flama-BookItalic2.woff);
+}
+
+.yellow-background {
+  background-color: yellow;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.white-background {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.text-desc {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.fetch-button {
+  padding: 10px 20px;
+  background-color: lightblue;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.prev-numbers {
+  font-size: 14px;
+  margin-top: 20px;
+}

@@ -1,0 +1,21 @@
+.column-content {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.column-content__container {
+  flex-grow: 1;
+  margin: 1em;
+  display: flex;
+}
+
+.column-content__img {
+  display: block;
+  align-self: center;
+  width: 504px;
+  max-width: 100%;
+  min-width: 260px;
+  /* margin-top: auto; */
+}
