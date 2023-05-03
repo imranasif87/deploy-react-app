@@ -381,12 +381,6 @@ Wideroe.Emergency.NextOfKin/package-lock.json
 package-lock.json
 Wideroe.Emergency.NextOfKin/package-lock.json
 
-dist
-\dist
-\*\dist
-\**\dist
-\**\dist\**
-\**\dist\**\**
 
 # User-specific stuff
 .idea/**/workspace.xml
