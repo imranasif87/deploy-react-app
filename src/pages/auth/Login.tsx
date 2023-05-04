@@ -20,11 +20,23 @@ const emptyFormData = {
     IsAdmin: false,
     Role: "",
     Password: "",
+    Email: ""
 };
 
 const Login: FunctionComponent<any> = (props) => {
     const navigate = useNavigate();
-    const [formData, setFormData] = useState<any>();
+    const [formData, setFormData] = useState({
+        Person: {
+            FirstName: "",
+            LastName: "",
+            Email: "",
+            Phone: "",
+        },
+        IsAdmin: false,
+        Role: "",
+        Password: "",
+        Email: "",
+    });
 
     const [language, setLanguage] = useState("no");
     const texts = language === "en" ? en.login : no.login;
@@ -47,8 +59,8 @@ const Login: FunctionComponent<any> = (props) => {
             ...prevState,
             Person: {
                 ...prevState.Person,
-                [name]: value,
             },
+            [name]: value,
         }));
     };
 
@@ -60,7 +72,7 @@ const Login: FunctionComponent<any> = (props) => {
             },
             body: JSON.stringify({
                 email: formData.Person.Email,
-                password: formData.Person.Password,
+                password: formData.Password,
             }),
         });
 
@@ -81,12 +93,12 @@ const Login: FunctionComponent<any> = (props) => {
         console.log(formData);
         const userExists = await checkUserExists(
             formData.Person.Email,
-            formData.Person.Password
+            formData.Password
         );
         if (userExists) {
             handleLoginClick();
             setEmail(formData.Person.Email);
-            setPassword(formData.Person.Password);
+            setPassword(formData.Password);
         } else {
             setAlert(
                 <Alert severity="error">
@@ -96,7 +108,7 @@ const Login: FunctionComponent<any> = (props) => {
         }
         setFormData(emptyFormData);
         setEmail(formData.Person.Email);
-        setPassword(formData.Person.Password);
+        setPassword(formData.Password);
     };
 
     const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -116,7 +128,7 @@ const Login: FunctionComponent<any> = (props) => {
     const handleLoginClick = async () => {
         const data = await checkUserExists(
             formData.Person.Email,
-            formData.Person.Password
+            formData.Password
         );
         console.log("Token: ", data.token);
         if (data.token) {

@@ -17,8 +17,9 @@ import Box from "@mui/material/Box";
 import CardBtn from "./CardBtn";
 import DefaultContainer from "../layout/DefaultContainer";
 
+import AuthProvider from "../pages/auth/AuthContext";
+import { AuthContext } from "../pages/auth/AuthContext";
 import ChangePassword from "../pages/auth/ChangePassword";
-import AuthProvider, { AuthContext } from "../pages/auth/AuthContext";
 
 // Code splitting, speed up application by not having every page be imported upon startup.
 const Home = lazy(() => import("../pages/Home"));
@@ -225,7 +226,7 @@ const App: FunctionComponent = () => {
                     path="/SoulInformation/:id"
                     element={
                         <Suspense fallback={<CircularIndeterminate />}>
-                            <SoulInformation />
+                            <SoulInformation navHeader="SoulInformation" />
                         </Suspense>
                     }
                 />
@@ -241,7 +242,7 @@ const App: FunctionComponent = () => {
                     path="/ActiveIncidents"
                     element={
                         <Suspense fallback={<CircularIndeterminate />}>
-                            <ActiveIncidents />
+                            <ActiveIncidents navHeader="Aktive hendelser" />
                         </Suspense>
                     }
                 />
@@ -258,7 +259,7 @@ const App: FunctionComponent = () => {
                     path="/Affected"
                     element={
                         <Suspense fallback={<CircularIndeterminate />}>
-                            <Affected />
+                            <Affected navHeader="Berørte av hendelsen" />
                         </Suspense>
                     }
                 />
@@ -361,6 +362,14 @@ const App: FunctionComponent = () => {
                                 ChangePassword
                             </ChangePassword>
                         </Suspense>
+                    }
+                />
+                <Route
+                    path="/defaultContainer"
+                    element={
+                        <DefaultContainer navHeader="Default container" onLanguageChange={(lang: any) => { }}>
+                            Default
+                        </DefaultContainer>
                     }
                 />
                 <Route

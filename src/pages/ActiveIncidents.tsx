@@ -44,7 +44,7 @@ const bull = (
   </Box>
 );
 
-const ActiveIncidents: FunctionComponent = (props) => {
+const ActiveIncidents: FunctionComponent<any> = (props) => {
   const [incidents, setIncidents] = useState([]);
   const [data, setData] = useState<Data[]>([]);
   const [searchQuery, setSearchQuery] = useState<string>("");

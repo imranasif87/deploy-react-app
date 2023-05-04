@@ -29,7 +29,7 @@ interface Params {
 }
 
 // Define the component
-const SoulInformation: FunctionComponent = () => {
+const SoulInformation: FunctionComponent<any> = () => {
     // Define state for the Soul object
     const [data, setData] = useState<Soul>({
         id: 0,

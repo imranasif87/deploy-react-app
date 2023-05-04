@@ -31,7 +31,7 @@ export const AuthContext = React.createContext({
     fetchUser: () => { },
 });
 
-const AuthProvider = (children: any) => {
+const AuthProvider = (obj: any) => {
     const navigate = useNavigate();
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [user, setUser] = useState<any>(null);
@@ -61,7 +61,7 @@ const AuthProvider = (children: any) => {
         <AuthContext.Provider
             value={{ isAuthenticated, setIsAuthenticated, user, fetchUser }}
         >
-            {children}
+            {obj.children}
         </AuthContext.Provider>
     );
 };

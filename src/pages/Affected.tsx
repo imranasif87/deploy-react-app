@@ -35,7 +35,7 @@ interface AffectedItem {
 }
 
 // Define the props passed to the Affected component
-const Affected: FunctionComponent = (props) => {
+const Affected: FunctionComponent<any> = (props) => {
     // Set the default language based on the value stored in localStorage
     const [language, setLanguage] = useState(
         localStorage.getItem("language") || "no"
