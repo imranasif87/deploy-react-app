@@ -1,1 +1,0 @@
-import{j as a,C as c}from"./index-04fc7d56.js";const t=r=>{const{navHeader:o,children:s}=r;return a(c,{navHeader:o,children:a("div",{className:"card-layout",children:a("div",{className:"card-layout__cards",children:s})})})};export{t as C};
