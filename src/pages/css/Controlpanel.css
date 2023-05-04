@@ -1,0 +1,107 @@
+.App,
+h1,
+#incaseit,
+#sharepoint,
+#buttons,
+.div {
+  display: flex;
+  justify-content: center;
+}
+
+#incaseit,
+#sharepoint {
+  justify-content: right;
+  margin: 5px;
+}
+
+.App {
+  flex-grow: 1;
+  margin: 1em;
+  display: flex;
+}
+
+#addincident,
+#incidents,
+#newincident {
+  margin: 10px;
+}
+
+#crew,
+#affected,
+#no_match,
+#evaluation,
+#statistics,
+#management_support,
+#liason {
+  margin: 10px;
+}
+
+#addincidentHRK {
+  justify-content: center;
+  margin: 15px;
+  width: 600px;
+}
+
+Table {
+  margin: 20px !important;
+  width: 92% !important;
+  display: flex;
+  justify-content: center;
+}
+
+.IncidentTable {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.add-crew {
+  position: absolute;
+  top: 120px;
+  right: 14%;
+  width: 150px;
+}
+
+.App-affected-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.table-container {
+  margin: 0 1em;
+}
+
+.description-textfield {
+  width: 100%;
+}
+
+h2 {
+  float: left;
+  clear: both;
+}
+
+.alert-container {
+  width: calc(30% * 3 + 4% * 2);
+  margin: 20px auto;
+}
+
+/* ActiveIncidents*/
+
+.ButtonsWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.Buttons {
+  display: flex;
+  gap: 10px;
+}

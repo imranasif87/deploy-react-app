@@ -1,0 +1,28 @@
+.Statistics {
+  width: 100%;
+  justify-content: center;
+}
+
+.App-header {
+  margin: 1em;
+  display: center;
+}
+
+.SelectStatistics {
+  position: absolute;
+  top: 13%;
+  right: 14%;
+  width: 150px;
+}
+
+Table {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.Link {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}

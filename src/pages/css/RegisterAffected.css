@@ -1,0 +1,35 @@
+.flex-cancel-wrap h1 {
+  font-family: flama-bold, Tahoma;
+  float: left;
+  margin: 0.5em;
+}
+
+.ic-guidance-link {
+  /* width: 100%; */
+  font-family: flama-book, Tahoma;
+  float: right;
+  text-align: right;
+}
+
+.ic-registration {
+  width: 100%;
+  border-radius: 25px;
+  border: 1px solid;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ic-registration > * {
+  flex: 1 1 1800px;
+}
+
+.ic-registration__soul {
+  max-width: 1800px;
+}
+
+.ic-registration__affected {
+  max-width: 1800px;
+  background-color: #f8f7f2;
+}

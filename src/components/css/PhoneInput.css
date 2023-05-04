@@ -1,0 +1,42 @@
+.input-phone:valid {
+  border: 1px solid green;
+}
+
+.input-phone:valid + .input-phone__description:after {
+  content: "✓ Norge";
+  padding-left: 5px;
+}
+
+.input-phone:valid + .input-phone__description-international:after {
+  content: "✓ 7-15 siffer";
+  padding-left: 5px;
+}
+
+.input-phone:focus:valid {
+  outline-color: green;
+}
+
+.input-phone:invalid + div::after {
+  content: "*";
+  padding-left: 5px;
+  color: red;
+}
+
+.input-phone:not(:placeholder-shown):invalid {
+  border: 1px solid red;
+}
+
+.input-phone:not(:placeholder-shown):invalid + .input-phone__description:after {
+  content: "Norsk #";
+  padding-left: 5px;
+}
+
+.input-phone:not(:placeholder-shown):invalid
+  + .input-phone__description-international:after {
+  content: "Internasjonalt #";
+  padding-left: 5px;
+}
+
+/* .input-phone:focus:not(:placeholder-shown):invalid {
+  outline-color: red;
+} */

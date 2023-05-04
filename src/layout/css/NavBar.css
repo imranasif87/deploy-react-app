@@ -1,0 +1,38 @@
+.navbar {
+  min-width: 200px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  font-family: flama-bold, Tahoma;
+  color: white;
+  /* background-color: #369E3B; */
+  background-color: #00602c;
+  align-items: center;
+}
+
+.navbar__img-container {
+  display: flex;
+  min-width: 20mm;
+  max-width: 12%;
+}
+
+.navbar__img-item {
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+  align-self: flex-end;
+}
+
+.navbar__header {
+  flex-grow: 1;
+  margin-top: 1em;
+  align-items: center;
+}
+
+.navbar__btns {
+  margin-top: 1em;
+  align-self: center;
+}
+
+.navbar--padding {
+  padding: 1em;
+}
