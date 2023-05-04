@@ -1,1 +1,0 @@
-.modal-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background-color:#000000b3}.modal{border-radius:25px;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background-color:#fff;padding:2em;z-index:1000}.modal>h1{font-family:flama-bold,Tahoma}.modal__children{margin:1em}.modal_children-btns{float:right}

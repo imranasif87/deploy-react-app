@@ -1,1 +1,0 @@
-import{c as r,C as s,j as e,L as n}from"./index-04fc7d56.js";/* empty css                     */const i=a=>{const{navHeader:t}=a;return r(s,{navHeader:t,children:[e("div",{className:"App",children:e("header",{className:"App-header",children:e("h1",{children:"Lederstøtte "})})}),e(n,{to:"/test",children:"Gå tilbake"})]})};export{i as default};
