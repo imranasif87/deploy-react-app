@@ -1,0 +1,1 @@
+import{a as c,j as a,C as g}from"./index-48719fb3.js";const d=t=>{const{navHeader:s,children:n}=t,[l,o]=c.useState(localStorage.getItem("language")||"no"),r=e=>{o(e),localStorage.setItem("language",e)};return a.jsx(g,{navHeader:s,onLanguageChange:r,children:a.jsx("div",{className:"card-layout",children:a.jsx("div",{className:"card-layout__cards",children:n})})})};export{d as C};

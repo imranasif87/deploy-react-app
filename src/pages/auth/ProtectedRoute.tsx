@@ -18,8 +18,8 @@ const ProtectedRoute: React.FC<Props> = ({
     return (
         <Route
             path={path}
-            render={(props: any) =>
-                isAuthenticated ? <Component {...props} /> : <Navigate to="/login" />
+            element={
+                isAuthenticated ? <Component /> : <Navigate to="/login" />
             }
         />
     );
