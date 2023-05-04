@@ -1,1 +1,0 @@
-import{j as e,C as n,L as r}from"./index-0d061a6e.js";/* empty css                     */const o=a=>{const{navHeader:s}=a;return e.jsxs(n,{navHeader:s,onLanguageChange:t=>{},children:[e.jsx("div",{className:"App",children:e.jsx("header",{className:"App-header",children:e.jsx("h1",{children:"Evaluering "})})}),e.jsx(r,{to:"/test",children:"Gå tilbake"})]})};export{o as default};
